@@ -1,5 +1,8 @@
 @extends("layout")
 @section("pageTitle", "Nova Marca")
+@section("style")
+<link rel="stylesheet" href="{{ asset('asset/css/home.css') }}" type="text/css" />
+@endsection
 @section("content")
 <div class="container">
     <h1>Marca Nova</h1>

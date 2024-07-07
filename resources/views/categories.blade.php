@@ -1,5 +1,8 @@
 @extends("layout")
 @section("pageTitle", "Categorias")
+@section("style")
+<link rel="stylesheet" href="{{ asset('asset/css/home.css') }}" type="text/css" />
+@endsection
 @section("content")
 <div class="container">
     <h1>Categorias</h1>
