@@ -10,6 +10,7 @@
         <li><a href="{{ route('products.index') }}">Listar Produtos</a></li>
         <li><a href="{{ route('brands.index') }}">Listar Marcas</a></li>
         <li><a href="{{ route('categories.index') }}">Listar Categorias</a></li>
+        <li><a href="{{ route('stock.index') }}">Ajuste de Estoque</a></li>
     </ul>
 </div>
 @endsection

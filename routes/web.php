@@ -4,6 +4,7 @@ use App\Http\Controllers\BrandsController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\StockController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
@@ -38,5 +39,12 @@ Route::prefix('products')->group(function(){
     Route::get('{id}', [ProductsController::class, 'edit'])->name('products.edit');
     Route::put('{id}', [ProductsController::class, 'update'])->name('products.update');
     Route::delete('{id}', [ProductsController::class, 'destroy'])->name('products.destroy');
+    
+});
+
+Route::prefix('stock')->group(function(){
+
+    Route::get('/', [StockController::class, 'index'])->name('stock.index');
+    Route::put('', [StockController::class, 'update'])->name('stock.update');
     
 });
