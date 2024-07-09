@@ -83,9 +83,9 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     border: 1px solid #fff;
-    width: auto; /* Remove fixed width */
-    max-width: 100%; /* Ensure it doesn't overflow */
-    overflow-x: auto; /* Add horizontal scroll if needed */
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto; 
 }
 
 .link-list {
@@ -162,7 +162,7 @@ footer {
 }
 
 table {
-    width: 100%; /* Ensure the table takes the full width of the container */
+    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #333;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class StockController extends Controller
 {
@@ -22,19 +23,19 @@ class StockController extends Controller
 
         switch ($request->input('operation')) {
             case '1':
-                $product->stock =+ $request->input('stock');
+                $product->stock = $product->stock + $request->input('stock');
                 break;
 
-            case '1':
-                $product->stock =- $request->input('stock');
+            case '2':
+                $product->stock = $product->stock - $request->input('stock');
                 break;
 
-            case '1':
+            case '3':
                 $product->stock = $request->input('stock');
                 break;
         }
-
         $product->save();
 
+        return redirect()->route('products.index');
     }
 }

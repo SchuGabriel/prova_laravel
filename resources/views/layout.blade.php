@@ -20,7 +20,7 @@
 <body>
     @include("includes.errors")
     @yield("content")
-    <footer style="background-color: #333; color: #fff; padding: 2px 0; width: 100%; text-align: center; bottom: 0;">
+    <footer class="footer">
         <p>© 2024 - Desenvolvido por Gabriel Schu</p>
     </footer>
 </body>
